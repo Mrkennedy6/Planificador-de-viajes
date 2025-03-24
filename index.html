@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planificador de Viajes</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Planificador de Viajes</h1>
+
+        <h2>Registrar Destino</h2>
+        <form id="formDestino">
+            <label for="destino">Destino:</label>
+            <input type="text" id="destino" required><br>
+            
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" required><br>
+            
+            <label for="transporte">Transporte:</label>
+            <select id="transporte">
+                <option value="avión">Avión</option>
+                <option value="tren">Tren</option>
+                <option value="autobús">Autobús</option>
+            </select><br>
+            
+            <button type="submit">Registrar</button>
+        </form>
+
+        <h2>Itinerario</h2>
+        <ul id="itinerario"></ul>
+
+        <h2>Calcular Costo Total</h2>
+        <button id="calcularCosto">Calcular Costo</button>
+        <p id="costoTotal"></p>
+    </div>
+
+    <script src="viaje.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
